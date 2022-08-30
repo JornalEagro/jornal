@@ -6,6 +6,60 @@ html {
   scroll-behavior: smooth;
 }
 
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.nav{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  background: rgb(13, 100, 20);
+}
+
+.menu{
+list-style:none;
+text-align: center;
+display: flex;
+margin-left: 5%;
+}
+
+.menu li{
+  position:relative;
+  width: 150px;
+  }
+
+.menu li a{
+  color:#fff; 
+  text-decoration:none; 
+  padding:5px 10px; 
+  display:block;
+  justify-content: center;
+}
+
+.menu li a:hover{
+  background:lightgray;
+}
+
+.menu li  ul{
+  position:absolute;
+  top:25px;
+  background-color: darkgreen;
+  display:none;
+  text-align: center;
+}
+
+.menu li:hover ul, .menu li.over ul{
+  display:block;
+  text-align: center;
+}
+
+.menu li ul li{
+  display:block;
+}
+
 a {
   margin: 0;
   background: rgb(13, 100, 20);
@@ -124,43 +178,7 @@ p {
   font-size: 90%;
 }
 
-header {
-  margin: 0;
-  padding: 0;
-}
 
-.menu {
-  width: 100vw;
-  flex-direction: row;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.menu ul {
-  list-style: none;
-  margin-top: 2%;
-}
-
-.menu ul li {
-  width: 10%;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  float: left;
-  font-size: 16px;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-menu ul li:hover {
-  background-color: darkgreen;
-}
-
-.menu ul ul {
-  display: none;
-  margin: 0px;
-}
 
 @media (max-width: 999px) {
   .logo {
