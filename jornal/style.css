@@ -75,15 +75,15 @@ a {
 }
 
 .brasaoUFRR {
-  width: 20%;
+  width: 10%;
 }
 
 .logoeagro {
-  width: 20%;
+  width: 10%;
 }
 
 .logo {
-  height: 200px;
+  width: 10%;
 }
 
 .materias{
@@ -142,4 +142,7 @@ margin-top: 16px;
   .comentarios {
     width: 50%;
   }
+
 }
+
+
