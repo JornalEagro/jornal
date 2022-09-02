@@ -1,0 +1,145 @@
+body {
+  background-color: #dcf2a7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.nav{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  background: rgb(13, 100, 20);
+}
+
+.menu{
+list-style:none;
+text-align: center;
+display: flex;
+margin-left: 5%;
+}
+
+.menu li{
+  position:relative;
+  width: 150px;
+  }
+
+.menu li a{
+  color:#fff; 
+  text-decoration:none; 
+  padding:5px 10px; 
+  display:block;
+  justify-content: center;
+}
+
+.menu li a:hover{
+  background:lightgray;
+}
+
+.menu li  ul{
+  position:absolute;
+  top:25px;
+  background-color: darkgreen;
+  display:none;
+  text-align: center;
+}
+
+.menu li:hover ul, .menu li.over ul{
+  display:block;
+  text-align: center;
+}
+
+.menu li ul li{
+  display:block;
+}
+
+a {
+  margin: 0;
+  background: rgb(13, 100, 20);
+  color: #dcf2a7;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.brasaoUFRR {
+  width: 20%;
+}
+
+.logoeagro {
+  width: 20%;
+}
+
+.logo {
+  height: 200px;
+}
+
+.materias{
+  display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 16px;
+  width: 90%;
+}
+
+.materias > img{
+  width: 100%;
+}
+
+.comentarios {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: darkgreen;
+  width: 30%;
+  border-radius: 3%;
+  margin: 0 auto;
+  font-size: 90%;
+}
+
+#Sugestaodefilmes{
+  margin-top: 16px;
+}
+
+
+
+
+
+@media (max-width: 999px) {
+  .logo {
+    width: 15%;
+    height: 15%;
+  }
+
+  .logoeagro {
+    width: 15%;
+  }
+
+  .brasaoUFRR {
+    width: 15%;
+  }
+
+  .nav-list.active {
+    transform: translateX(0);
+  }
+
+  .comentarios {
+    width: 50%;
+  }
+}
